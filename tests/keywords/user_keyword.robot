@@ -1,5 +1,5 @@
 *** Settings ***
-Resource  page_object/login.robot
+Resource  page_object/login_po.robot
 
 *** Keywords ***
 

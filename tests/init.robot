@@ -2,7 +2,7 @@
 Library  Selenium2Library
 Library  Process
 
-Resource  keywords/basic.robot
+Resource  keywords/user_keyword.robot
 
 *** Variables ***
 ${url}  http://172.17.0.2:8080
