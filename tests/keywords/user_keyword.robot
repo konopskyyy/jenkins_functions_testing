@@ -5,6 +5,7 @@ Resource  page_object/login_po.robot
 
 Login to Jenkins
 	[Arguments]  ${login}  ${password}
+	Click login button
 	Type login and password  ${login}  ${password}
 	Confirm login
 
