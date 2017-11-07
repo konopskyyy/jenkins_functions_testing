@@ -14,4 +14,5 @@ Open jenkins webside
 	Go To    ${url}
 
 	Login to Jenkins
+	Log out from Jenkins
 

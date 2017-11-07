@@ -6,3 +6,6 @@ Type login and password
 
 Confirm login
 	Click Button  yui-gen1-button
+
+Click logout button
+	Click Element  link=log out
