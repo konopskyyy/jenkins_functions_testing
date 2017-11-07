@@ -13,3 +13,9 @@ Log out from Jenkins
 
 Try again type password
 	Click again type password
+
+Check all login components
+	Page Should Contain Element  j_username
+	Page Should Contain Element  j_password 	
+	Page Should Contain Element  yui-gen1-button
+	Page Should Contain Element  remember_me

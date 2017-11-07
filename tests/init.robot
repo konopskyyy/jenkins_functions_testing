@@ -14,6 +14,7 @@ Open jenkins webside
 	Go To    ${url}
 
 Login to Jenkins
+	Check all login components
 	Login to Jenkins  admin  admin
 	Log out from Jenkins
 
