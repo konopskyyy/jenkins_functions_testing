@@ -23,3 +23,7 @@ Check all login components
 	Page Should Contain Element  j_password 	
 	Page Should Contain Element  yui-gen1-button
 	Page Should Contain Element  remember_me
+
+Create user
+	Go to MANAGE JENKINS
+	Go to MANAGE USERS

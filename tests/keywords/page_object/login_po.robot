@@ -19,3 +19,10 @@ Click logout button
 
 Click again type password
 	Click Element  link=Try again
+
+Go to MANAGE JENKINS
+	Click Element  link=Manage Jenkins
+
+Go to MANAGE USERS
+	Wait Until Element Is Visible  link=Manage Users
+	Click Element  link=Manage Users

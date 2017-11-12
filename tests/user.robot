@@ -15,6 +15,7 @@ ${empty}
 Open jenkins webside
 	Open Browser  ${url}  chrome
 	Go To    ${url}
+	Maximize Browser Window
 
 Login to Jenkins
 	Login to Jenkins  incorrect_login  admin
@@ -33,4 +34,8 @@ Login to Jenkins
 	Login to Jenkins  admin  admin
 	Log out from Jenkins
 
-	
+Create new user
+	Login to Jenkins  admin  admin
+	Create user
+
+
