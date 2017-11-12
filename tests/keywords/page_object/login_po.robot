@@ -1,10 +1,13 @@
+*** Variables ***
+${empty}
+
 *** Keywords ***
 
 Click login button
 	Click Element  link=log in
 
 Type login and password
-	[Arguments]  ${login}  ${password}
+	[Arguments]  ${login}=${empty}  ${password}=${empty}
 	Input Text  j_username  ${login}
 	Input Text  j_password  ${password}
 

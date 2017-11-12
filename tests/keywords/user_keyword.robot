@@ -1,10 +1,13 @@
 *** Settings ***
 Resource  page_object/login_po.robot
 
+*** Variables ***
+${empty}
+
 *** Keywords ***
 
 Login to Jenkins
-	[Arguments]  ${login}  ${password}
+	[Arguments]  ${login}=${empty}  ${password}=${empty}
 	Click login button
 	Type login and password  ${login}  ${password}
 	Confirm login
