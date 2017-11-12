@@ -17,11 +17,6 @@ Open jenkins webside
 	Go To    ${url}
 
 Login to Jenkins
-	Check all login components
-	Login to Jenkins  admin  admin
-	Log out from Jenkins
-
-Login to Jenkins ( negative tests )
 	Login to Jenkins  incorrect_login  admin
 	Try again type password
 	Login to Jenkins  admin  incorrect_password
@@ -34,3 +29,8 @@ Login to Jenkins ( negative tests )
 	Try again type password
 	Login to Jenkins  ${empty}  ${empty}
 	Try again type password
+	Check all login components
+	Login to Jenkins  admin  admin
+	Log out from Jenkins
+
+	
