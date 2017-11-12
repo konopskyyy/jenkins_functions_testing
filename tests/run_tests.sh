@@ -1,3 +1,3 @@
 #!/bin/bash
 
-robot init.robot
+robot user.robot
