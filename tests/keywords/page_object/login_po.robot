@@ -28,3 +28,15 @@ Go to MANAGE USERS
 	# Click Element  //*[@id="management-links"]/tbody/tr[15]/td[1]/a/img  # WebDriverException: Message: unknown error: Element is not clickable at point (430, 1023)
 	Go To  http://172.17.0.2:8080/securityRealm/
 	Click Element  link=Create User
+
+Type data for create user
+	[Arguments]  ${username}=${empty}  ${password}=${empty}  ${confirmPassword}=${empty}  ${fullName}=${empty}  ${email}=${empty}
+	Input Text  username  ${username}
+	Input Text  password1  ${password}
+	Input Text  password2  ${confirmPassword}
+	Input Text  fullname  ${fullName}
+	Input Text  email  ${email}
+
+Confirm create user
+	Click Button  yui-gen2-button
+	
