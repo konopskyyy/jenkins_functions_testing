@@ -15,6 +15,7 @@ ${empty}
 Open jenkins webside
 	Open Browser  ${url}  chrome
 	Go To    ${url}
+	Maximize Browser Window
 
 Login to Jenkins
 	Login to Jenkins  incorrect_login  admin
@@ -33,4 +34,14 @@ Login to Jenkins
 	Login to Jenkins  admin  admin
 	Log out from Jenkins
 
-	
+Create new user
+	Login to Jenkins  admin  admin
+	Go to CREATE USER page
+	Try create user without all information  test_user  ${empty}  ${empty}  ${empty}  ${empty}
+	Try create user without all information  ${empty}  test_password  ${empty}  ${empty}  ${empty}
+	Try create user without all information  test_user  test_password  ${empty}  ${empty}  ${empty}
+	Try create user without all information  test_user  test_password  bad_password  ${empty}  ${empty}
+	Try create user without all information  test_user  test_password  ${empty}  ${empty}  test@test
+	Try create user without all information  test_user  test_password  bad_password  ${empty}  test@test
+	Create user  test_user  test_password  test_password  ${empty}  test@test
+	Log out from Jenkins
