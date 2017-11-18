@@ -4,6 +4,8 @@ Library  Selenium2Library
 Resource  keywords/user_keyword.robot
 Resource  keywords/job_keyword.robot
 
+Suite Teardown  Close Browser
+
 *** Variables ***
 ${url}  http://172.17.0.2:8080
 
