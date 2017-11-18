@@ -50,3 +50,7 @@ Check address is correct
 	[Arguments]  ${link}
 	${browserLink} =  Get Location
 	Should be equal as strings  ${link}  ${browserLink}
+
+Delete test user
+	Click Element  //*[@id="people"]/tbody/tr[3]/td[4]/a[2]/img
+	Click Button  yui-gen2-button

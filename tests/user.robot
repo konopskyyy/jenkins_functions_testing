@@ -44,4 +44,5 @@ Create new user
 	Try create user without all information  test_user  test_password  ${empty}  ${empty}  test@test
 	Try create user without all information  test_user  test_password  bad_password  ${empty}  test@test
 	Create user  test_user  test_password  test_password  ${empty}  test@test
+	Delete test user
 	Log out from Jenkins
