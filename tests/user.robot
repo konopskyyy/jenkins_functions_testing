@@ -3,7 +3,10 @@ Library  Selenium2Library
 Library  Process
 
 Resource  keywords/user_keyword.robot
+Resource  keywords/general.robot
 
+Suite Teardown  Close Browser
+Suite Setup  Open jenkins webside  ${url}  chrome
 *** Variables ***
 ${url}  http://172.17.0.2:8080
 
@@ -11,11 +14,6 @@ ${url}  http://172.17.0.2:8080
 ${empty}
 
 *** Test Cases ***
-
-Open jenkins webside
-	Open Browser  ${url}  chrome
-	Go To    ${url}
-	Maximize Browser Window
 
 Login to Jenkins
 	Login to Jenkins  incorrect_login  admin
