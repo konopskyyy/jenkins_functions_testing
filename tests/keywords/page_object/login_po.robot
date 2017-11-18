@@ -17,6 +17,12 @@ Confirm login
 Click logout button
 	Click Element  link=log out
 
+Check all login components
+	Page Should Contain Element  j_username
+	Page Should Contain Element  j_password 	
+	Page Should Contain Element  yui-gen1-button
+	Page Should Contain Element  remember_me
+
 Click again type password
 	Click Element  link=Try again
 
@@ -40,3 +46,7 @@ Type data for create user
 Confirm create user
 	Click Button  yui-gen2-button
 	
+Check address is correct  
+	[Arguments]  ${link}
+	${browserLink} =  Get Location
+	Should be equal as strings  ${link}  ${browserLink}

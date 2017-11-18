@@ -37,10 +37,11 @@ Login to Jenkins
 Create new user
 	Login to Jenkins  admin  admin
 	Go to CREATE USER page
-	Try create user without all information  abc  ${empty}  ${empty}  ${empty}  ${empty}
-	Try create user without all information  ${empty}  abc  ${empty}  ${empty}  ${empty}
-	Try create user without all information  abc  def  ${empty}  ${empty}  ${empty}
-	Try create user without all information  abc  def  def  ${empty}  ${empty}
-	Try create user without all information  abc  def  ${empty}  ${empty}  test@test
-	Try create user without all information  abc  def  ghi  ${empty}  test@test
-	Try create user without all information  abc  def  def  ${empty}  test@test
+	Try create user without all information  test_user  ${empty}  ${empty}  ${empty}  ${empty}
+	Try create user without all information  ${empty}  test_password  ${empty}  ${empty}  ${empty}
+	Try create user without all information  test_user  test_password  ${empty}  ${empty}  ${empty}
+	Try create user without all information  test_user  test_password  bad_password  ${empty}  ${empty}
+	Try create user without all information  test_user  test_password  ${empty}  ${empty}  test@test
+	Try create user without all information  test_user  test_password  bad_password  ${empty}  test@test
+	Create user  test_user  test_password  test_password  ${empty}  test@test
+	Log out from Jenkins
