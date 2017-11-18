@@ -1,3 +1,3 @@
 #!/bin/bash
 
-robot user.robot
+robot user.robot jobs.robot
